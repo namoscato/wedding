@@ -1,0 +1,35 @@
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background: url(../img/background.png) #f6f4f3;
+  color: #464546;
+  font-family: "Libre Baskerville", serif;
+  margin: 0;
+}
+
+#container {
+  margin: 0 auto;
+  max-width: 19em;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+#balloon {
+  max-width: 8.5em;
+}
+
+#content {
+  font-size: 2em;
+  left: 6rem;
+  position: absolute;
+  top: 10rem;
+}
+
+.cursive {
+  font-family: Sacramento, cursive;
+  font-weight: 400;
+}

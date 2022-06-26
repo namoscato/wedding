@@ -1,0 +1,258 @@
+html {
+  height: 100%;
+}
+
+body {
+  background: #dee9ef url("../img/background-blue.png") repeat;
+  box-sizing: border-box;
+  color: #100c0e;
+  font-family: "Libre Baskerville", serif;
+  margin: 0;
+  padding: 2em 0 0;
+  min-height: 100%;
+}
+
+#balloons {
+  display: none;
+  left: 50%;
+  margin-left: -17rem;
+  position: absolute;
+  top: 25rem;
+  transform: translate3d(-50%, 0, 0);
+}
+
+#balloon-strings {
+  display: none;
+  left: 50%;
+  margin-left: -3rem;
+  position: absolute;
+  top: 47rem;
+}
+
+#pittsburgh {
+  display: block;
+  margin: 5rem auto 0;
+  max-width: 100%;
+}
+
+#map {
+  height: 40rem;
+  margin-top: -5rem;
+}
+
+#footer-image {
+  margin-top: -5rem;
+}
+
+#footer-image > img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 1px solid rgba(16, 12, 14, 0.3);
+}
+
+.actions,
+.card {
+  margin: 0 auto;
+  max-width: 36rem;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 0.3em 0.7em 0 rgba(16, 12, 14, 0.1);
+  box-sizing: border-box;
+  padding: 2em 1em;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.is-separated {
+  margin-top: 2rem;
+}
+
+.actions-link {
+  background-color: #444245;
+  border-bottom: none !important;
+  box-shadow: 0 0.2em 0.3em 0 rgba(16, 12, 14, 0.1);
+  color: white;
+  display: block;
+  flex: 1;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 2rem;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.actions-link:hover {
+  background-color: rgba(68, 66, 69, 0.93);
+}
+
+.subtitle {
+  font-style: italic;
+  line-height: 1.8;
+}
+
+.subtitle > br {
+  display: none;
+}
+
+.subtitle > em {
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: "Sacramento", cursive;
+  font-size: 3em;
+  font-weight: normal;
+  line-height: 1.2;
+  margin: 0.15em 0;
+}
+
+.date {
+  font-size: 1.5em;
+  margin: 1.5em auto 0;
+  max-width: 5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.date-day {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  font-size: 2.7em;
+  font-weight: 600;
+  margin: 0.15em;
+  padding: 0.05em 0;
+}
+
+.date-year {
+  letter-spacing: 0.8em;
+}
+
+.detail {
+  font-size: 0.8em;
+  margin-top: 2.5em;
+}
+
+.detail-time {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.detail-subtitle {
+  font-style: italic;
+  margin: 0.5em 0 1em;
+}
+
+.detail-content {
+  line-height: 1.8;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0.5em 0;
+}
+
+.list {
+  list-style-type: none;
+  line-height: 1.5;
+  margin: 0 0 2.5em;
+  padding: 0;
+}
+
+.list > li {
+  margin-top: 2em;
+  text-transform: uppercase;
+}
+
+.list > li > a > em {
+  text-transform: lowercase;
+}
+
+/* map */
+
+.gm-style .gm-style-iw-c {
+  border-radius: 0;
+  padding: 1.5em;
+}
+
+.gm-style .gm-style-iw-t::after {
+  top: -1px;
+}
+
+.map-info {
+  font-family: "Libre Baskerville", serif;
+}
+
+.map-info > p {
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 0.5em;
+}
+
+.map-info-title {
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+@media (min-width: 36rem) {
+  #balloons,
+  #balloon-strings {
+    display: block;
+  }
+
+  .card {
+    padding: 4em 3em;
+  }
+
+  .actions {
+    display: flex;
+  }
+
+  .actions-link:first-child {
+    margin-right: 1rem;
+  }
+
+  .actions-link:last-child {
+    margin-left: 1rem;
+  }
+
+  .subtitle > br {
+    display: inline;
+  }
+
+  .detail {
+    margin-top: -2.5em;
+  }
+
+  .detail-left {
+    float: left;
+    text-align: left;
+  }
+
+  .detail-right {
+    text-align: right;
+  }
+}
+
+@media (min-width: 46.25rem) {
+  #pittsburgh {
+    max-width: none;
+  }
+}
